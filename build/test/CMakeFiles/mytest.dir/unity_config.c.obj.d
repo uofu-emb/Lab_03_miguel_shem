@@ -1,0 +1,20 @@
+test/CMakeFiles/mytest.dir/unity_config.c.obj: \
+ /home/shem/lab03/rtos.template/test/unity_config.c \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/stdio.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/_ansi.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/newlib.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/_newlib_version.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/sys/config.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/machine/ieeefp.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/sys/features.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/sys/cdefs.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/machine/_default_types.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/sys/reent.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/_ansi.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/sys/_types.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/machine/_types.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/sys/lock.h \
+ /home/shem/.pico-sdk/toolchain/13_2_Rel1/arm-none-eabi/include/sys/stdio.h \
+ /home/shem/lab03/rtos.template/test/unity_config.h

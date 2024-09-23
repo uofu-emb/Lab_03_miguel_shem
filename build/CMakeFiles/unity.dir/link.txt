@@ -1,0 +1,2 @@
+/home/shem/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-ar qc libunity.a CMakeFiles/unity.dir/lib/unity/src/unity.c.obj
+/home/shem/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-ranlib libunity.a
