@@ -1,1 +1,7 @@
 build/**
+log/**
+b2.elf
+**/.vscode/
+**/gdb/
+
+**/#*#
