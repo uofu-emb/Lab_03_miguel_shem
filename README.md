@@ -1,3 +1,8 @@
+![example workflow](https://github.com/uofu-emb/Lab_03_miguel_shem/actions/workflows/main.yml/badge.svg)
+
+
+Still having issues getting renode working. We were unable to get the testing to work as intended with renode.
+
 # Renode setup
 The Raspberry Pico needs configuration files for Renode to work properly.
 

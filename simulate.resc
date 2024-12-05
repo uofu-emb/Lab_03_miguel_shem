@@ -1,15 +1,15 @@
-logFile $WORKING/log/hello_world-renode.log True
+logFile @/home/speedy/repos/coursework/adv_emb_sys/lab03/log/hello_world-renode.log True
 
 using sysbus
 
 $name?="rpi_pico"
 mach create $name
 
-machine LoadPlatformDescription @platforms/cpus/rpi_pico_rp2040_w.repl
+machine LoadPlatformDescription @/home/speedy/repos/coursework/adv_emb_sys/lab03/rpi_pico_rp2040_w.repl
 
 # cpu0 LogFunctionNames true
 # sysbus LogAllPeripheralsAccess true
-# cpu0 CreateExecutionTracing "tracer_name" $WORKING/log/trace PC
+# cpu0 CreateExecutionTracing "tracer_name" /home/speedy/repos/coursework/adv_emb_sys/lab03/log/trace PC
 # tracer_name TrackMemoryAccesses
 
 showAnalyzer uart0
@@ -18,14 +18,19 @@ showAnalyzer uart0
 macro reset
 """
     # This is the ROM bootloader
-    sysbus LoadELF @https://github.com/raspberrypi/pico-bootrom-rp2040/releases/download/b2/b2.elf
-    sysbus LoadELF $WORKING/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
-    sysbus LoadELF $ELF
+    sysbus LoadELF @/home/speedy/repos/coursework/adv_emb_sys/lab03/b2.elf
+    sysbus LoadELF @/home/speedy/repos/coursework/adv_emb_sys/lab03/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
     cpu0 VectorTableOffset `sysbus GetSymbolAddress "__vectors"`
     cpu1 IsHalted true
-    cpu0 EnableProfilerCollapsedStack $WORKING/log/hello_world-profile true
+    cpu0 EnableProfilerCollapsedStack @/home/speedy/repos/coursework/adv_emb_sys/lab03/log/hello_world-profile true
 """
 
 runMacro $reset
 
 machine StartGdbServer 3333
+
+machine EnableProfiler @/home/speedy/repos/coursework/adv_emb_sys/lab03/log/test.log
+
+sysbus LogPeripheralAccess 0x501009EC
+
+start
